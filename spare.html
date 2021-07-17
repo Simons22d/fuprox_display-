@@ -1,0 +1,124 @@
+<div class="container gellix" id="home">
+	<div class="row mt-5 col-lg-12">
+
+		<div class="col-lg-4"><img src="./images/logo.png" alt="Logo"  height='20px'></div>
+		<div class="col-lg-1 offset-6">
+		</div>
+
+		<div class="col-lg-1 float-right">
+			<img src="./images/manageSolutions.png" id="settings" height="15px">
+		</div>
+
+	</div>
+	<!-- end verify -->
+	<!-- body -->
+	<div class="row col-lg-12 mt-3">
+		<!-- the verify button goes here -->
+		<div class="col-lg-12" id="branch">—</div><br>
+		<div class="col-lg-12 text-muted" ><small class="text-muted" id="date">—</small></div>
+	</div>
+	<div class="row col-lg-12 mt-5" id="services" style="margin-left: 1px">
+		<div class="col-lg-8">
+			<div class="row">
+				</head>		  
+			  <body>			
+				<video
+					id="myVideo"
+					class="video-js"
+					controls
+					autoplay
+					width="640" height="264"
+					data-setup='{}'
+
+				>
+			  </video>
+			  <!-- 
+				data-setup='{ "techOrder": ["youtube", "html5"], "sources": [{ "type": "video/youtube", "src": "https://www.youtube.com/watch?v=xjS6SftYQaQ"}] }'
+				<link href="https://unpkg.com/video.js/dist/video-js.css" rel="stylesheet">
+			   -->
+			</div>
+		</div>
+		<div class="col-lg-4">
+			<h5 class="text-muted">Tickets Order</h5>
+			<hr>
+			<div id="actives">
+			</div>
+		</div>
+	</div>
+	<div class="row" id="the_divs">
+
+		<!-- start -->
+		<!-- <div class='col-lg-3'>
+			<div class="col-lg-12 teller_number_display" >
+				<h5 id="tellerOne" >Teller —</h5><hr>
+				<div id="ticketsOne"></div>
+			</div>
+		</div>
+		<div class='col-lg-3'>
+			<div class="col-lg-12 teller_number_display" >
+				<h5 id="tellerTwo" >Teller —</h5><hr>
+				<div id="ticketsTwo"></div>
+			</div>
+		</div>
+		<div class='col-lg-3'>
+			<div class="col-lg-12 teller_number_display" >
+				<h5 id="tellerThree" >Teller —</h5><hr>
+				<div id="ticketsThree"></div>
+			</div>
+		</div>
+		<div class='col-lg-3'>
+			<div class="col-lg-12 teller_number_display" >
+				<h5 id="tellerFour" >Teller —</h5><hr>
+				<div id="ticketsFour"></div>
+			</div>
+		</div> -->
+		<!-- end -->
+
+		<div class="carousel-content">
+              
+			<div class="slide slide-1">
+			  <div>cat</div>
+			</div>
+			<div class="slide slide-2">
+			  <div>dog</div>
+			</div>
+			<div class="slide slide-3">
+			  <div>mouse</div>
+			</div>
+			<div class="slide slide-4">
+			  <div>hen</div>
+			</div>
+			<div class="slide slide-5">
+			  <div>bug</div>
+			</div>
+		</div>
+	</div>
+</div>
+<!--model-->
+<div id="myModal" class="modal" style="font-family: 'Avenir Next'">
+	<div class="modal-content" >
+		<span class="close" style="text-align:right">&times;</span>
+		<div id="pop" class="col-lg-12">
+			<h5  id="action">Settings</h5>
+			<!-- body start -->
+			<!-- top card  -->
+			<div class="row details">
+				<!-- test -->
+				<div class="col mt-3 " style="font-size:12px">
+				<h5  id="action">Actions</h5>
+				<div class="row">
+					<div class="col-lg-4 mb-3"  id="allocated">
+					<p class="actions">Enter Your branch Activation Key <br><small>This key is allocated to you via email after registration</small></p>
+						<div id="message_key"></div>
+						<div class="form-group">
+							<label for="exampleFormControlTextarea1">Key</label>
+							<input class="form-control form-control-sm" id="key" rows="1" style="width:40rem;font-family:monospace;" />
+						</div>
+						<button class="btn btn btn-outline-primary btn-sm col-lg-5"  id="verifyKey" disabled>Verify</button>
+					</div>
+				</div>
+			</div>
+			</div>
+		</div>
+	</div>
+</div>

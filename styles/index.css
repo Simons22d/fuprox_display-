@@ -1,0 +1,85 @@
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+.carousel {
+  height: 150px; 
+}
+
+.carousel-content {
+  position: relative;
+  overflow: hidden;
+  transition: width .4s;
+  height: 100%;
+}
+
+.slide {
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  transition: left .4s cubic-bezier(.47,.13,.15,.89);
+  padding-left: 10px;
+}
+
+.radii{
+  border:1px solid black;
+  border-radius: 5px;
+  padding-left:20px;
+  border: 2px solid #dedede;
+  height:150px;
+  padding-top:15px;
+}
+
+.headers{
+  font-weight:bold;
+  font-size:28px;
+}
+
+.sep{
+  margin-top:-20px;
+  margin-bottom:-5px;
+}
+
+.tickets{
+  font-weight:bold;
+  font-size:38px;
+  color:royalblue;
+}
+
+.nav-left {
+  left: -25px;
+}
+
+.nav-right {
+  right: -25px;
+}
+
+.sidebar{
+  font-size:40px;
+}
+
+.container_{
+  width:90%;
+  margin:0 auto;
+}
+
+#the_divs{
+  width:100%;
+}
+
+#branch{
+  font-size:14px;
+}
+#date{
+  font-size:14px;
+}
+
+.container_slider{
+  width:98%;
+  margin:0 auto;
+}
+.sidebar{
+  font-size:30px;
+}
