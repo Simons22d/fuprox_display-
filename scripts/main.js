@@ -517,7 +517,7 @@ const getActiveTickets = (call=12) => {
 				let teller_number  = Number(item.teller)
 				str += `<div class="slide">
 					<div class="radii" >
-							<p class="headers">TELLER ${item.teller}</p>
+							<p class="headers">Counter ${item.teller}</p>
 							<p class="sep"> — </p>
 							<p class="tickets">${item.code}${item.ticket}</p>
 					</div>
