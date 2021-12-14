@@ -647,6 +647,8 @@ sio.on("update_vids_data",()=>{
 // ------------------
 
 var myPlayer = videojs('myVideo');
+// setting the player volume
+myPlayer.volume(0.2)
 
 const getAllVideos = () =>{
 	getData(`${link}/video/active`,"POST","",(data)=>{
@@ -668,7 +670,6 @@ const getAllVideosEvt = () =>{
 
 const prepareEncoding = (videoData) =>{
 	let type = videoData.type
-	console.log("video Type",videoData)
 	// modify DOM
 	let handle = $("#myVideo")
 	// here we are going to add and remove elements from the DOM
