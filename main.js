@@ -12,12 +12,12 @@ function createWindows() {
     // fullscreen : true,
     win = new BrowserWindow({
                 height:600,
-                width: 1000,    
+                width: 1000,
                 allowRendererProcessReuse : true,
                 autoHideMenuBar  : true,
-                fullscreen : true,
-                frame: false,
-                alwaysOnTop : true
+                // fullscreen : true,
+                // frame: false,
+                // alwaysOnTop : true
     })
     // alwaysOnTop : true,
     // minimizable : false,

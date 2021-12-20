@@ -290,9 +290,9 @@ const getActiveTickets_side = (call=12) => {
 			data.map((item,index)=>{
 				let teller_number  = Number(item.teller)
 				if(data.length - 1 === index){
-					actives += `<p class="text-muted sidebar" id=""><p style="font-size:18px">${item.code}${item.ticket}  — Teller No.${item.teller}</p></p>`
+					actives += `<p class="text-muted sidebar" id=""><p style="font-size:18px">${item.code}${item.ticket}  — Room No.${item.teller}</p></p>`
 				}else{
-					actives += `<p class="text-muted sidebar" id="" ><p style="font-size:18px">${item.code}${item.ticket}  — Teller No.${item.teller}</p></p>`
+					actives += `<p class="text-muted sidebar" id="" ><p style="font-size:18px">${item.code}${item.ticket}  — Room No.${item.teller}</p></p>`
 				}
 			})
 			// handle.html(final)
@@ -517,7 +517,7 @@ const getActiveTickets = (call=12) => {
 				let teller_number  = Number(item.teller)
 				str += `<div class="slide">
 					<div class="radii" >
-							<p class="headers">Counter ${item.teller}</p>
+							<p class="headers">Room ${item.teller}</p>
 							<p class="sep"> — </p>
 							<p class="tickets">${item.code}${item.ticket}</p>
 					</div>
@@ -547,7 +547,7 @@ sessionStorage.setItem('roller_list',Array(Array(`
 <div class="carousel-content">
 	<div class="slide">
 		<div class="radii" >
-				<p class="headers">TELLER 00</p>
+				<p class="headers">ROOM 00</p>
 				<p class="sep"> — </p>
 				<p class="tickets">NOQ 00</p>
 		</div>
