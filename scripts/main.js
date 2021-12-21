@@ -288,11 +288,11 @@ const getActiveTickets_side = (call=12) => {
 			let actives = ""
 
 			data.map((item,index)=>{
-				let teller_number  = Number(item.teller)
+
 				if(data.length - 1 === index){
-					actives += `<p class="text-muted sidebar" id=""><p style="font-size:18px">${item.code}${item.ticket}  — Room No.${item.teller}</p></p>`
+					actives += `<p class="text-muted sidebar" id=""><p style="font-size:18px">${item.code}${item.ticket}  — ${item.teller_.callout_name}</p></p>`
 				}else{
-					actives += `<p class="text-muted sidebar" id="" ><p style="font-size:18px">${item.code}${item.ticket}  — Room No.${item.teller}</p></p>`
+					actives += `<p class="text-muted sidebar" id="" ><p style="font-size:18px">${item.code}${item.ticket}  —  ${item.teller_.callout_name}</p></p>`
 				}
 			})
 			// handle.html(final)
@@ -514,10 +514,10 @@ const getActiveTickets = (call=12) => {
 			str += `<div class="carousel-content">`
 			data.map((item,index)=>{
 
-				let teller_number  = Number(item.teller)
+
 				str += `<div class="slide">
 					<div class="radii" >
-							<p class="headers">Room ${item.teller}</p>
+							<p class="headers">${item.teller_.callout_name}</p>
 							<p class="sep"> — </p>
 							<p class="tickets">${item.code}${item.ticket}</p>
 					</div>
