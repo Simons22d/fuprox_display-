@@ -17,11 +17,12 @@ function createWindows() {
                 autoHideMenuBar  : true,
                 fullscreen : true,
                 frame: false,
-                alwaysOnTop : true
+                alwaysOnTop : true,
+                minimizable : false,
+                resizable :false,
     })
     // alwaysOnTop : true,
-    // minimizable : false,
-    // resizable :false,
+    
 
     // win.webContents.openDevTools()
 
