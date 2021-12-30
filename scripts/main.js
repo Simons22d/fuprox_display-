@@ -290,7 +290,7 @@ const getActiveTickets_side = (call=12) => {
 			data.map((item,index)=>{
 
 				if(data.length - 1 === index){
-					actives += `<div>${item.code}${item.ticket}  — ${item.teller_.callout_name}</div><div>${item.code}${item.ticket}w  — ${item.teller_.callout_name}</div> <div>${item.code}${item.ticket} e — ${item.teller_.callout_name}</div>`
+					actives += `<div>${item.code}${item.ticket}  — ${item.teller_.callout_name}</div>`
 				}else{
 					actives += `<div>${item.code}${item.ticket}  —  ${item.teller_.callout_name}</div>`
 				}
