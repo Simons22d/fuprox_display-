@@ -83,3 +83,7 @@
 .sidebar{
   font-size:30px;
 }
+#tickets_side_parent{
+  height:26rem;
+  overflow-y:scroll;
+}

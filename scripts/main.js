@@ -282,7 +282,7 @@ const getActiveTickets_side = (call=12) => {
 		for(x in data){count++;}
 		if(count){
 			let handle = $("#ticketsOne")
-			let activesHandle = $("#actives")
+			let activesHandle = $("#list")
 			// count data final
 			let final = ""
 			let actives = ""
@@ -290,9 +290,9 @@ const getActiveTickets_side = (call=12) => {
 			data.map((item,index)=>{
 
 				if(data.length - 1 === index){
-					actives += `<p class="text-muted sidebar" id=""><p style="font-size:18px">${item.code}${item.ticket}  — ${item.teller_.callout_name}</p></p>`
+					actives += `<div>${item.code}${item.ticket}  — ${item.teller_.callout_name}</div><div>${item.code}${item.ticket}w  — ${item.teller_.callout_name}</div> <div>${item.code}${item.ticket} e — ${item.teller_.callout_name}</div>`
 				}else{
-					actives += `<p class="text-muted sidebar" id="" ><p style="font-size:18px">${item.code}${item.ticket}  —  ${item.teller_.callout_name}</p></p>`
+					actives += `<div>${item.code}${item.ticket}  —  ${item.teller_.callout_name}</div>`
 				}
 			})
 			// handle.html(final)
@@ -728,5 +728,24 @@ window.addEventListener("load", () => {
 })
 
 
+// var div = $('#activess');
+// // var div = $('div.autoscrolling');
+// var scroller = setInterval(function(){
+// 	var pos = div.scrollTop();
+// 	div.scrollTop(++pos);
+// }, 100)
 
+
+
+// $('#activess').stop().animate({scrollTop:40}, 400, 'swing', function(){
+// 	console.log("ssdsd")
+// });
+setTimeout(()=>{
+	setInterval(function(){
+		$('#list').stop().animate({scrollTop:40}, 400, 'swing', function(){
+			$(this).find('div:last').after($('div:first', this));
+		});
+	}, 1000);
+
+},1000)
 
