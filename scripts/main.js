@@ -742,10 +742,13 @@ window.addEventListener("load", () => {
 // });
 setTimeout(()=>{
 	setInterval(function(){
-		$('#list').stop().animate({scrollTop:40}, 400, 'swing', function(){
-			$(this).find('div:last').after($('div:first', this));
-		});
-	}, 1000);
-
-},1000)
+		let handle = $('#list')
+		console.log(handle.length)
+		if(handle.length > 10){
+			handle.stop().animate({scrollTop:40}, 400, 'swing', function(){
+				$(this).find('div:last').after($('div:first', this));
+			});
+		}
+	}, 3000);
+},3000)
 
