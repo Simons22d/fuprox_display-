@@ -11,6 +11,7 @@
 .carousel-content {
   position: relative;
   overflow: hidden;
+  font-size:12px;
   transition: width .4s;
   height: 100%;
 }

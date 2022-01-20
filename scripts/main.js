@@ -517,7 +517,7 @@ const getActiveTickets = (call=12) => {
 
 				str += `<div class="slide">
 					<div class="radii" >
-							<p class="headers">${item.teller_.callout_name}</p>
+							<p class="headers" style="font-size:22px;">${item.teller_.callout_name}</p>
 							<p class="sep"> — </p>
 							<p class="tickets">${item.code}${item.ticket}</p>
 					</div>
