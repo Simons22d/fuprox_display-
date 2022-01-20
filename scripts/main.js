@@ -297,6 +297,10 @@ const getActiveTickets_side = (call=12) => {
 			})
 			// handle.html(final)
 			activesHandle.html(actives)
+		}else{
+			let activesHandle = $("#list")
+			let actives = `<div>RM 00 —  qsft 00</div>`
+			activesHandle.html(actives)
 		}
 	})
 };
@@ -498,7 +502,8 @@ const getActiveTickets = (call=12) => {
 		let final = "";
 		let count = 0;
 		for(x in data){count++;}
-		if(count){
+		console.log("CURRENT COUNT ",count)
+		if(count >0){
 			
 			let handle = $("#ticketsOne")
 			let activesHandle = $("#actives")
@@ -534,26 +539,39 @@ const getActiveTickets = (call=12) => {
 				$("#roller_list").html(sessionStorage.getItem("roller_list"))
 				slider()
 			}else{
-				// dont update
-				// console.log("do not update")
+				
 			}
+		}else{
+			sessionStorage.setItem('roller_list',Array(Array(`
+			<div class="carousel-content">
+				<div class="slide">
+					<div class="radii" >
+							<p class="headers">RM 00</p>
+							<p class="sep"> — </p>
+							<p class="tickets">qsft 00</p>
+					</div>
+				</div>
+			</div>
+			`)))
+			$("#roller_list").html(sessionStorage.getItem("roller_list"))
+			slider()
 		}
 	})
 };
 
 getActiveTickets()
 
-sessionStorage.setItem('roller_list',Array(Array(`
-<div class="carousel-content">
-	<div class="slide">
-		<div class="radii" >
-				<p class="headers">ROOM 00</p>
-				<p class="sep"> — </p>
-				<p class="tickets">NOQ 00</p>
-		</div>
-	</div>
-</div>
-`)))
+// sessionStorage.setItem('roller_list',Array(Array(`
+// <div class="carousel-content">
+// 	<div class="slide">
+// 		<div class="radii" >
+// 		<p class="headers">RM 00</p>
+// 		<p class="sep"> — </p>
+// 		<p class="tickets">qsft 00</p>
+// 		</div>
+// 	</div>
+// </div>
+// `)))
 
 
 
